@@ -1,0 +1,88 @@
+$Bellico: "Bellico", sans-serif;
+$Montserrat: "Montserrat", sans-serif;
+$BerkshireSwash: "Berkshire Swash", cursive;
+$lora: "Lora", serif;
+
+$textColor: #613c41;
+$darkTextColor: #616161;
+$lightTextColor: #9f9896;
+$lightTextAccentColor: #a8756f;
+
+$accentColor: #ec495e;
+
+body {
+    font-family: $lora;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+
+    // background-color: #f7f7f7;
+    color: $lightTextColor;
+
+    @include breakpoint(small) {
+        // font-size: 17px;
+    }
+
+
+    @include breakpoint(extra-small) {
+        // font-size: 16px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $lora;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: $textColor;
+}
+
+h1, h2 {
+    font-family: $BerkshireSwash;
+}
+
+h1 {
+    font-size: 46px;
+
+    @include breakpoint(small) {
+        // font-size: 30px;
+    }
+
+
+    @include breakpoint(extra-small) {
+        // line-height: 1.44;
+    }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+
+    @include breakpoint(extra-small) {
+        // line-height: 1.28;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+}
+
+p {
+    @include breakpoint(extra-small) {
+        // font-size: 16px;
+    }
+}
+
+.accent {
+    color: $accentColor;
+}

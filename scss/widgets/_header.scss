@@ -1,9 +1,110 @@
 .header {
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: #f0c7c9;
 
-    // .logo {
-    //     background-image: url(../images/main-logo.png);
-    //     height: 64px;
-    // }
+    @include breakpoint(leptop) {
+        padding-top: 45px;
+    }
+
+
+    @include breakpoint(extra-small) {
+        padding-top: 30px;
+    }
+
+
+    .logo {
+        text-align: center;
+    }
+
+    .navbar {
+        padding-top: 11px;
+        background-color: transparent;
+        border-color: transparent;
+
+        ul.nav {
+            float: none;
+            text-align: center;
+
+            @include breakpoint(small) {
+                float: none;
+            }
+
+
+            li {
+                float: none;
+                display: inline-block;
+                text-transform: uppercase;
+                text-align: center;
+                font-family: $Montserrat;
+
+                @include breakpoint(small) {
+                    font-size: 12px;
+                    text-align: right;
+                }
+
+
+                @include breakpoint(extra-small) {
+                    display: block;
+                    text-align: left;
+                    padding-left: 5px;
+                }
+
+
+                a {
+                    padding: 15px 10px;
+                }
+            }
+        }
+    }
+
+    // <-- bootstrap
+    .navbar-header {
+        text-transform: uppercase;
+        font-family: $Montserrat;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #888;
+
+        &:focus {
+            background-color: transparent;
+        }
+
+        &:hover {
+            background-color: #e0b2b5;
+        }
+    }
+
+    // end -->
+
+    .main-header {
+        padding-top: 240px;
+        text-align: center;
+
+        @include breakpoint(extra-small) {
+            padding-top: 30px;
+        }
+
+
+        @include breakpoint(leptop) {
+            padding-top: 100px;
+        }
+
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: center;
+            color: $textColor;
+        }
+
+        .button {}
+    }
 }
