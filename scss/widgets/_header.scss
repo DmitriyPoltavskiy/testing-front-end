@@ -1,6 +1,6 @@
 .header {
     padding-top: 80px;
-    background-color: #f0c7c9;
+    background-color: $mainBgColor;
 
     @include breakpoint(leptop) {
         padding-top: 45px;
@@ -87,6 +87,16 @@
 
         @include breakpoint(extra-small) {
             padding-top: 30px;
+        }
+
+
+        @include breakpoint(small) {
+            padding-top: 30px;
+        }
+
+
+        @include breakpoint(medium) {
+            padding-top: 50px;
         }
 
 
