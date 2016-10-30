@@ -1,0 +1,26 @@
+.solution-in-steps {
+    h5 {
+        text-align: left;
+    }
+
+    .step {
+        &:before {
+            content: "";
+            font-family: "Berkshire Swash";
+            font-size: 1000px;
+            color: #000;
+        }
+
+        &:nth-child(1):before {
+            content: "01";
+        }
+
+        &:nth-child(2n):before {
+            content: "02";
+        }
+
+        &:nth-child(3):before {
+            content: "04";
+        }
+    }
+}

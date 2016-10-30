@@ -83,6 +83,7 @@
 
     .main-header {
         padding-top: 240px;
+        padding-bottom: 220px;
         text-align: center;
 
         @include breakpoint(extra-small) {
@@ -107,6 +108,7 @@
 
         h1 {
             margin-bottom: 15px;
+            line-height: 50px;
         }
 
         p {
