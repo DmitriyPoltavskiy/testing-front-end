@@ -1,26 +1,25 @@
 .solution-in-steps {
-    h5 {
-        text-align: left;
+    padding-bottom: 90px;
+
+    .desc {
+        margin-top: -15px;
+    }
+
+    // h5 {
+    //     font-family: $lora;
+    //     font-weight: bold;
+    //     text-align: left;
+    // }
+
+    .number {
+        span {
+            font-family: $BerkshireSwash;
+            font-size: 100px;
+            color: #ec495e;
+        }
     }
 
     .step {
-        &:before {
-            content: "";
-            font-family: "Berkshire Swash";
-            font-size: 1000px;
-            color: #000;
-        }
-
-        &:nth-child(1):before {
-            content: "01";
-        }
-
-        &:nth-child(2n):before {
-            content: "02";
-        }
-
-        &:nth-child(3):before {
-            content: "04";
-        }
+        padding-left: 30px;
     }
 }
