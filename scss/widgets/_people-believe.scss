@@ -1,0 +1,30 @@
+.people-believe {
+    .quote {
+        padding-top: 65px;
+
+        .people {
+            img {
+                margin-bottom: -6px;
+            }
+        }
+
+        img {
+            float: left;
+            margin-right: 30px;
+        }
+
+        blockquote {
+            overflow: hidden;
+            margin-bottom: 40px;
+            font-family: $lora;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        cite {
+            font-family: $BerkshireSwash;
+            font-size: 28px;
+            color: #a8756f;
+        }
+    }
+}

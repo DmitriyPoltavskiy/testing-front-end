@@ -1,0 +1,43 @@
+.promote {
+    margin-bottom: -6px;
+    padding-top: 40px;
+    background-color: #f5d7d7;
+
+    img {
+        margin-bottom: -6px;
+    }
+
+    .description {
+        text-align: left;
+
+        h2 {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-family: $lora;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 11px;
+            line-height: 16px;
+        }
+
+        h2 + p {
+            margin-bottom: 30px;
+            font-size: 12px;
+        }
+
+        cite {
+            font-family: $BerkshireSwash;
+            font-size: 28px;
+            color: #a8756f;
+        }
+    }
+}
