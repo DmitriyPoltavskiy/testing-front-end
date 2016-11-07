@@ -25,6 +25,7 @@
         }
 
         p {
+            margin-bottom: 40px;
             font-size: 11px;
             line-height: 16px;
         }
@@ -34,10 +35,23 @@
             font-size: 12px;
         }
 
-        cite {
-            font-family: $BerkshireSwash;
-            font-size: 28px;
-            color: #a8756f;
+        h3 {
+            font-family: $lora;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            color: #613c41;
+        }
+
+        .button {
+            padding: 14px 50px;
+            background-color: #fff;
+            color: #ec495e;
+        }
+
+        h3 + p {
+            margin-bottom: 10px;
+            font-style: italic;
         }
     }
 }

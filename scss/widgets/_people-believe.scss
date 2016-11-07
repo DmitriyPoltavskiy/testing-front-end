@@ -1,16 +1,15 @@
 .people-believe {
+    .people {
+        margin-bottom: -6px;
+    }
+
     .quote {
         padding-top: 65px;
-
-        .people {
-            img {
-                margin-bottom: -6px;
-            }
-        }
 
         img {
             float: left;
             margin-right: 30px;
+            margin-bottom: 0;
         }
 
         blockquote {

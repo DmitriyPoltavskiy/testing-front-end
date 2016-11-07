@@ -1,0 +1,27 @@
+.info-about-project {
+    padding-bottom: 70px;
+
+    h3 {
+        font-size: 20px;
+        font-family: $lora;
+
+        // font-weight: bold;
+        line-height: 27px;
+        text-align: left;
+        color: #613c41;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #616161;
+    }
+
+    img:nth-child(odd) {
+        margin-bottom: 40px;
+    }
+
+    p:nth-child(even) {
+        margin-bottom: 40px;
+    }
+}
