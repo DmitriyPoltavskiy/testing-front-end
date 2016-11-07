@@ -1,0 +1,21 @@
+.logotype {
+    background-color: #f8f7f6;
+
+    .logos {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 0px;
+
+        .logo {
+            max-width: 100px;
+            margin: auto;
+
+            // text-align: center;
+       
+        }
+    }
+}

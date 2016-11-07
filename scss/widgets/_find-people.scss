@@ -1,0 +1,29 @@
+.find-people {
+    padding-bottom: 70px;
+    background-color: #fff9ef;
+    text-align: center;
+
+    .description {
+        padding-bottom: 20px;
+    }
+
+    h5 {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    p {
+        padding: 0px 20px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    a {
+        font-family: $Montserrat;
+        font-size: 11px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
