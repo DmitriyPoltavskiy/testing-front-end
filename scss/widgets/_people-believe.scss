@@ -1,10 +1,50 @@
 .people-believe {
+    .description {
+        @include breakpoint(extra-small) {
+            padding-bottom: 20px;
+        }
+
+
+        @include breakpoint(medium) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        text-align: center;
+    }
+
+
     .people {
         margin-bottom: -6px;
+
+        @include breakpoint(medium) {}
     }
 
     .quote {
         padding-top: 65px;
+
+        @include breakpoint(small) {
+            padding-top: 15px;
+        }
+
+
+        @include breakpoint(medium) {
+            padding-top: 25px;
+        }
+
+
+        @include breakpoint(extra-small) {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+
 
         img {
             float: left;
@@ -18,12 +58,28 @@
             font-family: $lora;
             font-style: italic;
             font-size: 20px;
+
+            @include breakpoint(extra-small) {
+                text-align: left;
+            }
         }
 
         cite {
             font-family: $BerkshireSwash;
             font-size: 28px;
             color: #a8756f;
+
+            @include breakpoint(extra-small) {
+                width: 100%;
+                order: -2;
+            }
+        }
+
+        p {
+            @include breakpoint(extra-small) {
+                order: -1;
+                width: 100%;
+            }
         }
     }
 }

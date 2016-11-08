@@ -7,17 +7,31 @@
         margin-top: 30px;
         padding: 11px 30px;
         font-size: 12px;
+
+        @include breakpoint(extra-small) {
+            display: block;
+            margin: 30px auto;
+        }
     }
 
     .num {
         display: block;
         margin-top: 30px;
         font-size: 40px;
+
+        @include breakpoint(extra-small) {
+            text-align: center;
+        }
     }
 
     h4 {
         font-size: 18px;
         text-align: left;
+
+        @include breakpoint(extra-small) {
+            margin-top: 20px;
+            line-height: 27px;
+        }
     }
 
     p {

@@ -2,12 +2,33 @@
     padding-bottom: 70px;
     color: #613c41;
 
+    @include breakpoint(extra-small) {
+        padding-bottom: 30px;
+    }
+
+
+    @include breakpoint(small) {
+        padding-bottom: 30px;
+    }
+
+
+    .description {
+        @include breakpoint(extra-small) {
+            padding-bottom: 10px;
+        }
+
+
+        @include breakpoint(small) {
+            padding-bottom: 30px;
+        }
+    }
+
+    .map {
+        margin-top: 20px;
+    }
+
     .contact-inform {
         padding-top: 20px;
-
-        // .icons {
-        //     text-align: right;
-        // }
 
         .info-block {
             position: relative;

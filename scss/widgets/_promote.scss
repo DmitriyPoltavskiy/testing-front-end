@@ -10,9 +10,24 @@
     .description {
         text-align: left;
 
+        @include breakpoint(extra-small) {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+
+        @include breakpoint(small) {
+            padding-top: 20px;
+        }
+
+
         h2 {
             margin-bottom: 10px;
-            text-align: left;
+
+            // @include breakpoint(small) {
+            //     text-align: center;
+            // }
+       
         }
 
         h4 {
@@ -22,6 +37,10 @@
             font-size: 13px;
             line-height: 20px;
             text-align: left;
+
+            @include breakpoint(extra-small) {
+                text-align: center;
+            }
         }
 
         p {
@@ -41,6 +60,10 @@
             font-weight: bold;
             text-align: left;
             color: #613c41;
+
+            @include breakpoint(extra-small) {
+                text-align: center;
+            }
         }
 
         .button {

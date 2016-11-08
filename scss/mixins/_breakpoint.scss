@@ -5,7 +5,7 @@
         }
     }
 
-    @if $point == laptop {
+    @if $point == leptop {
         @media (min-width: 1200px) and (max-width: 1400px) {
             @content;
         }

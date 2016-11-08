@@ -1,12 +1,28 @@
 .show-plans {
     padding-bottom: 80px;
 
+    @include breakpoint(small) {
+        padding-bottom: 40px;
+    }
+
+
+    @include breakpoint(extra-small) {
+        padding-bottom: 0px;
+    }
+
+
     .cards {
         .card {
             position: relative;
             padding: 60px 20px;
             border: 1px solid #e1e1e1;
             text-align: center;
+
+            @include breakpoint(extra-small) {
+                border: none;
+                border-top: 1px solid #e1e1e1;
+            }
+
 
             &:before {
                 content: '';
@@ -20,19 +36,33 @@
 
             &:nth-child(n) {
                 border-right: none;
+
+                @include breakpoint(extra-small) {
+                    border-top: 1px solid #e1e1e1;
+                }
             }
 
             &:nth-child(2n) {
                 border: 1px solid #e1e1e1;
-
-                // -webkit-box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.75);
-                // -moz-box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.1);
                 box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.1);
+
+                @include breakpoint(extra-small) {
+                    border: none;
+                    border-top: 1px solid #e1e1e1;
+                    box-shadow: none;
+                }
             }
 
             &:nth-child(3n) {
                 border: 1px solid #e1e1e1;
                 border-left: none;
+
+                @include breakpoint(extra-small) {
+                    border: none;
+                    border-top: 1px solid #e1e1e1;
+                }
             }
 
             h3 {
@@ -75,6 +105,16 @@
 
             .options {
                 padding-top: 90px;
+
+                @include breakpoint(small) {
+                    padding-top: 60px;
+                }
+
+
+                @include breakpoint(extra-small) {
+                    padding-top: 60px;
+                }
+
 
                 .option {
                     margin-top: 10px;

@@ -3,8 +3,21 @@
     background-color: #fff9ef;
     text-align: center;
 
+    @include breakpoint(extra-small) {
+        padding-bottom: 20px;
+    }
+
+
     .benefit {
         margin-bottom: 40px;
+    }
+
+    .benefits {
+        @include breakpoint(extra-small) {
+            p {
+                margin-bottom: 30px;
+            }
+        }
     }
 
     h5 {

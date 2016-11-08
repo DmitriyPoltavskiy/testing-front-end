@@ -2,13 +2,36 @@
     padding-bottom: 70px;
     background-color: #fbf3f3;
 
+    @include breakpoint(extra-small) {
+        padding-bottom: 40px;
+    }
+
+
+    .description {
+        @include breakpoint(extra-small) {
+            padding-bottom: 10px;
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        text-align: center;
+    }
+
+
     h5 {
-        // color: #613c41;
         font-weight: normal;
+
+        @include breakpoint(extra-small) {
+            text-align: center;
+        }
     }
 
     p {
         font-size: 13px;
+
+        @include breakpoint(extra-small) {
+            padding: 0 20px;
+        }
     }
 }
 

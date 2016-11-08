@@ -1,6 +1,27 @@
 .info-about-project {
     padding-bottom: 70px;
 
+    @include breakpoint(small) {
+        padding-bottom: 10px;
+    }
+
+
+    @include breakpoint(extra-small) {
+        padding-bottom: 10px;
+    }
+
+
+    .description {
+        @include breakpoint(extra-small) {
+            padding-bottom: 10px;
+        }
+
+
+        @include breakpoint(small) {
+            padding-bottom: 10px;
+        }
+    }
+
     h3 {
         font-size: 20px;
         font-family: $lora;

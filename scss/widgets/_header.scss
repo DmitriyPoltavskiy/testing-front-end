@@ -88,6 +88,7 @@
 
         @include breakpoint(extra-small) {
             padding-top: 30px;
+            padding-bottom: 60px;
         }
 
 
@@ -109,6 +110,10 @@
         h1 {
             margin-bottom: 15px;
             line-height: 50px;
+
+            @include breakpoint(mobile) {
+                font-size: 40px;
+            }
         }
 
         p {

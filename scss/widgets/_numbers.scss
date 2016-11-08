@@ -5,6 +5,16 @@
 
     .num {
         line-height: 30px;
+
+        @include breakpoint(extra-small) {
+            line-height: 100px;
+        }
+    }
+
+    .description {
+        @include breakpoint(extra-small) {
+            padding-bottom: 10px;
+        }
     }
 
     p {
