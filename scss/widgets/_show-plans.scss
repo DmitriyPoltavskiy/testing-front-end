@@ -1,19 +1,39 @@
 .show-plans {
-    // border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 80px;
+
     .cards {
-        border: 1px solid #e1e1e1;
-        position: relative;
-
-        &:after {
-            content: '';
-            position: absolute;
-            height: 1px;
-            background-color: #e1e1e1;
-        }
-
         .card {
-            padding: 40px 20px;
+            position: relative;
+            padding: 60px 20px;
+            border: 1px solid #e1e1e1;
             text-align: center;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 190px;
+                height: 1px;
+                width: 100%;
+                background-color: #e1e1e1;
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(n) {
+                border-right: none;
+            }
+
+            &:nth-child(2n) {
+                border: 1px solid #e1e1e1;
+
+                // -webkit-box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.75);
+                // -moz-box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 1px 59px -10px rgba(0, 0, 0, 0.1);
+            }
+
+            &:nth-child(3n) {
+                border: 1px solid #e1e1e1;
+                border-left: none;
+            }
 
             h3 {
                 font-family: $BerkshireSwash;
@@ -41,10 +61,37 @@
                     font-weight: bold;
                 }
             }
+
+            .choice {
+                position: absolute;
+                top: 0;
+                transform: translateX(-50%);
+            }
+
+            .button {
+                margin-top: 35px;
+                padding: 14px 31px;
+            }
+
+            .options {
+                padding-top: 90px;
+
+                .option {
+                    margin-top: 10px;
+
+                    img {
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        margin-top: 0;
+                    }
+
+                    h4 {
+                        display: inline-block;
+                    }
+                }
+            }
         }
     }
-}
-
-.clearfix {
-    clear: both;
 }
