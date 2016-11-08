@@ -1,3 +1,50 @@
 .show-plans {
-    border-bottom: 1px solid #e3e3e3;
+    // border-bottom: 1px solid #e3e3e3;
+    .cards {
+        border: 1px solid #e1e1e1;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            background-color: #e1e1e1;
+        }
+
+        .card {
+            padding: 40px 20px;
+            text-align: center;
+
+            h3 {
+                font-family: $BerkshireSwash;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: -5px;
+                    height: 1px;
+                    width: 70px;
+                    margin: 0 auto;
+                    background-color: #e1e1e1;
+                    transform: translateX(-50%);
+                }
+            }
+
+            p {
+                margin-top: 30px;
+                font-family: $lora;
+                font-size: 13px;
+
+                .accent {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.clearfix {
+    clear: both;
 }

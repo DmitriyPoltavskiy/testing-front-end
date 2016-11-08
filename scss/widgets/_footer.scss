@@ -1,4 +1,6 @@
 .footer {
+    padding-bottom: 45px;
+
     .collapse.navbar-collapse {
         ul.navbar-nav {
             li {
@@ -11,5 +13,25 @@
                 }
             }
         }
+    }
+
+    .social-icons {
+        font-size: 10px;
+        text-align: center;
+
+        a {
+            margin: 0 10px;
+            color: #bc8e8a;
+        }
+    }
+
+    nav.navbar.navbar-default {
+        margin-bottom: 10px;
+    }
+
+    .copy {
+        padding-top: 20px;
+        text-align: center;
+        color: #613c41;
     }
 }
