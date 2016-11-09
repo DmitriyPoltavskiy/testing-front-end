@@ -25,6 +25,10 @@
 
     .map {
         margin-top: 20px;
+
+        img {
+            cursor: pointer;
+        }
     }
 
     .contact-inform {
@@ -44,6 +48,7 @@
 
             .accent {
                 font-family: "MyriadPro";
+                cursor: pointer;
             }
 
             h6 {

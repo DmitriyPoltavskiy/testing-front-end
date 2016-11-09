@@ -1,15 +1,18 @@
 .footer {
     padding-bottom: 45px;
 
-    .collapse.navbar-collapse {
-        ul.navbar-nav {
+    .navbar {
+        ul.nav {
             li {
+                display: inline-block;
+
                 a {
                     font-size: 13px;
                     color: #a8756f;
 
-                    // background-color: red;
-               
+                    &:hover {
+                        background-color: transparent;
+                    }
                 }
             }
         }

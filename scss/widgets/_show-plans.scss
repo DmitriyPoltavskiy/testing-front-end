@@ -11,6 +11,12 @@
     }
 
 
+    .description {
+        @include breakpoint(extra-small) {
+            padding-bottom: 40px;
+        }
+    }
+
     .cards {
         .card {
             position: relative;

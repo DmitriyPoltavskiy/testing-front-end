@@ -2,12 +2,12 @@
     padding-bottom: 70px;
 
     @include breakpoint(small) {
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
 
 
     @include breakpoint(extra-small) {
-        padding-bottom: 10px;
+        padding-bottom: 40px;
     }
 
 
